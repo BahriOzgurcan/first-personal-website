@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h2 {
+  font-family: Inter;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 3rem;
+}
+
+h3 {
+  color: var(--default-indigo-700, #4338ca);
+  font-family: Inter;
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.75rem; /* 93.333% */
+}
+
+#detail-text #detail {
+  color: var(--default-gray-500, #6b7280);
+
+  font-family: Inter;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1rem;
+}
+
+.tech {
+  color: #3730a3;
+  font-family: Inter;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: -0.04375rem;
+}
+
+h4 {
+  color: #1f2937;
+  font-family: Inter;
+  font-size: 2.625rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%; /* 3.28125rem */
+}
