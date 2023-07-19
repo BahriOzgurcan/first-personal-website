@@ -51,7 +51,7 @@ export const paragraphs = {
         },
         {
           title: "Education",
-          detail: "METU, Architecture, 2016, 3.16 GPA",
+          detail: "METU, Architecture, 2016",
         },
         {
           title: "Job Preferences",
@@ -68,7 +68,7 @@ export const paragraphs = {
           title: "Workintech",
           detail: "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
           techs: ["react", "redux", "axios"],
-          img_url: "www.ww.com",
+          img_url: "../assets/pizza.png",
           button: "Canlı Versiyon",
           links: [],
         },
@@ -76,7 +76,7 @@ export const paragraphs = {
             title: "Random Jokes",
             detail: "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
             techs: ["react", "redux", "axios"],
-            img_url: "www.ww.com",
+            img_url: "../assets/films.png",
             button: "Canlı Versiyon",
             links: [],
           },
@@ -84,7 +84,7 @@ export const paragraphs = {
             title: "Journey",
             detail: "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
             techs: ["react", "redux", "axios"],
-            img_url: "www.ww.com",
+            img_url: "../assets/movieSelector.png",
             button: "Canlı Versiyon",
             links: [],
           },
@@ -161,7 +161,7 @@ export const paragraphs = {
         },
         {
           title: "Eğitim",
-          detail: "ODTÜ, Mimarlık, 2016, 3.16 GPA",
+          detail: "ODTÜ, Mimarlık, 2016",
         },
         {
           title: "İş Tercihleri",

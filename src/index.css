@@ -11,7 +11,7 @@ h2 {
 }
 
 h3 {
-  color: var(--default-indigo-700, #4338ca);
+  /* color: var(--default-indigo-700, #4338ca); */
   font-family: Inter;
   font-size: 1.875rem;
   font-style: normal;
@@ -20,7 +20,7 @@ h3 {
 }
 
 #detail-text #detail {
-  color: var(--default-gray-500, #6b7280);
+  /* color: var(--default-gray-500, #6b7280); */
 
   font-family: Inter;
   font-size: 0.75rem;
@@ -30,7 +30,7 @@ h3 {
 }
 
 .tech {
-  color: #3730a3;
+
   font-family: Inter;
   font-size: 0.875rem;
   font-style: normal;
@@ -40,7 +40,7 @@ h3 {
 }
 
 h4 {
-  color: #1f2937;
+
   font-family: Inter;
   font-size: 2.625rem;
   font-style: normal;

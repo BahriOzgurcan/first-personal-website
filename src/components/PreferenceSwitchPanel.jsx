@@ -13,6 +13,7 @@ const PreferenceSwitchPanel = () => {
         <button className="bg-red-600 text-cyan-500"
           onClick={() => {
             setLanguagePreference("en");
+            document.documentElement.lang = "en";
           }}
         >
           dil degis en
@@ -20,6 +21,7 @@ const PreferenceSwitchPanel = () => {
         <button
           onClick={() => {
             setLanguagePreference("tr");
+            document.documentElement.lang = "tr";
           }}
         >
           dil degis tr

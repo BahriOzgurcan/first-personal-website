@@ -9,8 +9,9 @@ const useLocalStorage = (key, initialValue) => {
         return JSON.parse(localValue);
       } else {
         const userSystemLanguage = navigator.language.slice(0, 2);
-        if (userSystemLanguage === "en" || userSystemLanguage === "tr") {
-          return navigator.language.slice(0, 2);
+        if (userSystemLanguage === "tr") {
+          document.documentElement.lang = "tr";
+          return userSystemLanguage;
         } else {
           return "en";
         }

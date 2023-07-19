@@ -3,6 +3,7 @@ import { useContext } from "react";
 import { LanguageContext } from "../contexts/languageContext";
 import LinkedInLogo from "../assets/linkedin";
 import GithubLogo from "../assets/github";
+import img from "../assets/test-img.jpg"
 
 
 const Hero = () => {
@@ -18,17 +19,17 @@ const Hero = () => {
           <h1 className="text-[4.5rem] leading-[4.5rem] font-bold dark:text-[#AEBCCF] text-text-default-gray">
             {paragraphs[languagePreference.toLowerCase()].hero.header}
           </h1>
-          <p className="w-[34rem] shrink"
+          <p className="w-[34rem] shrink text-[1.125rem] leading-[1.75rem]"
           >{paragraphs[languagePreference.toLowerCase()].hero.detail}</p>
           <div className="flex flex-row gap-3">
-            <button className="flex-initial whitespace-nowrap  text-lg font-medium not-italic bg-text-indigo text-white rounded-md border-[1px] px-8 py-3 border-indigo-900" href="#skills">
+            <button className="flex-initial whitespace-nowrap  text-lg font-medium not-italic bg-text-indigo text-white rounded-md border-[1px] px-8 py-3 border-indigo-900 dark:bg-[#E1E1FF] dark:text-[#3730A3]" href="#skills">
              {paragraphs[languagePreference.toLowerCase()].hero.link_1}
             </button>
-            <button className="inline-flex flex-initial whitespace-nowrap  text-lg font-medium not-italic bg-white text-text-indigo rounded-md border-[1px] px-8 py-3 border-indigo-900 dark:bg-[#383838] dark:text-[#E1E1FF]" href="#skills">
+            <button className="inline-flex flex-initial whitespace-nowrap  text-lg font-medium not-italic bg-white text-text-indigo rounded-md border-[1px] px-8 py-3 border-indigo-900 dark:bg-[#383838] dark:text-[#E1E1FF] dark:border-[#E1E1FF]" href="#skills">
               <GithubLogo/> &nbsp;&nbsp;
               {paragraphs[languagePreference.toLowerCase()].hero.link_2}
             </button>
-            <button className="inline-flex flex-initial whitespace-nowrap  text-lg font-medium not-italic bg-white text-text-indigo rounded-md border-[1px] px-8 py-3 border-indigo-900 dark:bg-[#383838] dark:text-[#E1E1FF]" href="#skills">
+            <button className="inline-flex flex-initial whitespace-nowrap  text-lg font-medium not-italic bg-white text-text-indigo rounded-md border-[1px] px-8 py-3 border-indigo-900 dark:bg-[#383838] dark:text-[#E1E1FF] dark:border-[#E1E1FF]" href="#skills">
              <LinkedInLogo fill={"#3730A3"}/> &nbsp;&nbsp;
               {paragraphs[languagePreference.toLowerCase()].hero.link_3}
             </button>
@@ -36,7 +37,7 @@ const Hero = () => {
         </div>
         <img
           className="rounded-[1.125rem] w-[29.75rem] h-[23rem] object-cover shadow-img justify-center center"
-          src="../../public/test-img.jpg"
+          src={img}
           alt="."
         />
       </div>

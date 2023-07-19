@@ -1,4 +1,3 @@
-import homeIcon from "../assets/Home-icon.svg";
 import { paragraphs } from "../data/mockData";
 import { useContext } from "react";
 import { LanguageContext } from "../contexts/languageContext";
