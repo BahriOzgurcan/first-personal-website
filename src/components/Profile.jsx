@@ -9,20 +9,20 @@ const Profile = () => {
   return (
     <div className="flex flex-col w-4/5 pt-10 pb-[2.62rem] border-t-[1px] border-[#BAB2E7]">
       <h2 className="mb-7 dark:text-[#AEBCCF]">{paragraphs[languagePreference].profile.header}</h2>
-      <div className="flex flex-row w-4/5">
-        <div className="w-1/2">
+      <div className="flex flex-row flex-wrap gap-16">
+        <div className="">
           <h3 className="mb-7 text-[#4338ca] dark:text-[#CFCBFF]">
             {paragraphs[languagePreference].profile.secondHeader_1}
           </h3>
-          <div className="flex flex-row gap-16">
-            <div className="">
+          <div className="flex flex-row gap-8">
+            <div className="w-1/3">
               {paragraphs[languagePreference].profile.profileDetails.map(
                 (detail) => {
                   return <p className=" whitespace-nowrap font-semibold">{detail.title}:</p>;
                 }
               )}
             </div>
-            <div className="">
+            <div className="w-1/3">
               {paragraphs[languagePreference].profile.profileDetails.map(
                 (detail) => {
                   return <p className=" whitespace-nowrap">{detail.detail}</p>;

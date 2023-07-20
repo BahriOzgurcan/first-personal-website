@@ -3,28 +3,28 @@ import { LanguageContext } from "../contexts/languageContext";
 import { useContext, useEffect } from "react";
 
 
-const PreferenceSwitchPanel = () => {
+const PreferenceSwitchPanel = (props) => {
   const { languagePreference, setLanguagePreference } =
     useContext(LanguageContext);
 
   return (
-    <div>
-      <div className="language">
-        <button className="bg-red-600 text-cyan-500"
+    <div className="flex w-4/5 justify-end place-content-between">
+      <div className="language flex flex-row gap-8 ">
+        <button className=" border-2 border-text-indigo rounded-md"
           onClick={() => {
             setLanguagePreference("en");
             document.documentElement.lang = "en";
           }}
         >
-          dil degis en
+          english
         </button>
-        <button
+        <button className=" border-2 border-text-indigo rounded-md bg-text-gray"
           onClick={() => {
             setLanguagePreference("tr");
             document.documentElement.lang = "tr";
           }}
         >
-          dil degis tr
+          turkce
         </button>
       </div>
       <div className="theme">

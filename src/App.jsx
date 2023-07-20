@@ -10,9 +10,7 @@ import Projects from "./components/Projects";
 import "./index.css";
 
 function App() {
-  const [count, setCount] = useState(0);
-  const [dil, setDil] = useState("en");
-  const [dil1, setDil1] = useState("");
+  const [theme, setTheme] = useState("light");
 
   const { languagePreference, setLanguagePreference } =
     useContext(LanguageContext);
@@ -26,8 +24,10 @@ function App() {
           window.matchMedia("(prefers-color-scheme: dark)").matches)
       ) {
         document.documentElement.classList.add("dark");
+        setTheme("dark");
       } else {
         document.documentElement.classList.remove("dark");
+        setTheme("light");
       }
     };
 
@@ -45,9 +45,9 @@ function App() {
 
   return (
     <div className="flex flex-col w-full items-center bg-white dark:bg-[#252128] dark:text-[#FFFFFF]">
-      <PreferenceSwitchPanel />
+      <PreferenceSwitchPanel/>
       <Header />
-      <Hero />
+      <Hero theme={theme}/>
       <Skills />
       <Profile />
       <Projects />

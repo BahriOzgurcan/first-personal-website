@@ -1,3 +1,7 @@
+import pizzaimg from "../assets/pizza.png";
+import movieSelection from "../assets/movieSelector.png";
+import movie from "../assets/films.png";
+
 export const paragraphs = {
   en: {
     switchPanel: {
@@ -65,26 +69,26 @@ export const paragraphs = {
       header: "Projects",
       projectDetails: [
         {
-          title: "Workintech",
+          title: "Pizza Store",
           detail: "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
           techs: ["react", "redux", "axios"],
-          img_url: "../assets/pizza.png",
+          img_url: pizzaimg,
           button: "Canlı Versiyon",
           links: [],
         },
         {
-            title: "Random Jokes",
+            title: "Favourite Movie Selection Project",
             detail: "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
             techs: ["react", "redux", "axios"],
-            img_url: "../assets/films.png",
+            img_url: movie,
             button: "Canlı Versiyon",
             links: [],
           },
         {
-            title: "Journey",
+            title: "Movie Selection Project",
             detail: "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
             techs: ["react", "redux", "axios"],
-            img_url: "../assets/movieSelector.png",
+            img_url: movieSelection,
             button: "Canlı Versiyon",
             links: [],
           },
@@ -205,16 +209,16 @@ export const paragraphs = {
         email: "aksoyozgurcan@gmail.com",
         links:[
             {
-                text: "Kişisel Blog",
-                url: "",
+                text: "İnstagram",
+                url: "https://www.instagram.com/bahriozgurcan/",
             },
             {
                 text: "Github",
-                url: "",
+                url: "https://github.com/BahriOzgurcan",
             },
             {
                 text: "Linkedin",
-                url: "",
+                url: "https://www.linkedin.com/in/bahri%C3%B6zg%C3%BCrcanaksoy/",
             },
         ]
     },
