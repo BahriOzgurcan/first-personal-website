@@ -8,6 +8,9 @@ import Skills from "./components/Skills";
 import Profile from "./components/Profile";
 import Projects from "./components/Projects";
 import "./index.css";
+import RandomQuotes from "./components/RandomQuotes";
+import ThemeToggle from "./components/ThemeToggle";
+import LanguageToggle from "./components/LanguageToggle";
 
 function App() {
   const [theme, setTheme] = useState("light");
@@ -45,10 +48,15 @@ function App() {
 
   return (
     <div className="flex flex-col w-full items-center bg-white dark:bg-[#252128] dark:text-[#FFFFFF]">
-      <PreferenceSwitchPanel/>
+      <div className="flex flex-row w-4/5 justify-end gap-4 mt-2">
+        <LanguageToggle />
+        <ThemeToggle />
+      </div>
+      {/* <RandomQuotes/> */}
+      {/* <PreferenceSwitchPanel /> */}
       <Header />
-      <Hero theme={theme}/>
-      <Skills />
+      <Hero theme={theme} />
+      <Skills theme={theme} />
       <Profile />
       <Projects />
       <Footer />

@@ -35,10 +35,36 @@ export const paragraphs = {
           "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       },
       {
-        title: "Node.Js",
+        title: "CSS",
         detail:
           "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      },]
+      },
+      {
+        title: "Html",
+        detail:
+          "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      },
+      {
+        title: "Tailwind",
+        detail:
+          "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      },
+      {
+        title: "Redux Store",
+        detail:
+          "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      },
+      {
+        title: "Git/Github",
+        detail:
+          "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      },
+      {
+        title: "Three.js",
+        detail:
+          "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      },
+    ]
     },
     profile: {
       header: "Profile",
@@ -99,16 +125,16 @@ export const paragraphs = {
         email: "aksoyozgurcan@gmail.com",
         links:[
             {
-                text: "Personal Blog",
-                url: "",
+                text: "Instagram",
+                url: "https://www.instagram.com/bahriozgurcan/",
             },
             {
                 text: "Github",
-                url: "",
+                url: "https://github.com/BahriOzgurcan",
             },
             {
                 text: "Linkedin",
-                url: "",
+                url: "https://www.linkedin.com/in/bahri%C3%B6zg%C3%BCrcanaksoy/",
             },
         ]
     },

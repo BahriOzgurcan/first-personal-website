@@ -26,26 +26,26 @@ const Hero = (props) => {
           {paragraphs[languagePreference.toLowerCase()].hero.detail}
         </p>
         <div className="flex flex-row gap-3 flex-wrap">
-          <button
+          <a
             className="flex-initial whitespace-nowrap  text-lg font-medium not-italic bg-text-indigo text-white rounded-md border-[1px] px-8 py-3 border-indigo-900 dark:bg-[#E1E1FF] dark:text-[#3730A3]"
             href="#skills"
           >
             {paragraphs[languagePreference.toLowerCase()].hero.link_1}
-          </button>
-          <button
+          </a>
+          <a
             className="inline-flex flex-initial whitespace-nowrap  text-lg font-medium not-italic bg-white text-text-indigo rounded-md border-[1px] px-8 py-3 border-indigo-900 dark:bg-[#383838] dark:text-[#E1E1FF] dark:border-[#E1E1FF]"
-            href="#skills"
+            href="https://github.com/BahriOzgurcan"
           >
             <GithubLogo theme={props.theme} /> &nbsp;&nbsp;
             {paragraphs[languagePreference.toLowerCase()].hero.link_2}
-          </button>
-          <button
+          </a>
+          <a
             className="inline-flex flex-initial whitespace-nowrap  text-lg font-medium not-italic bg-white text-text-indigo rounded-md border-[1px] px-8 py-3 border-indigo-900 dark:bg-[#383838] dark:text-[#E1E1FF] dark:border-[#E1E1FF]"
-            href="#skills"
+            href="https://www.linkedin.com/in/bahri%C3%B6zg%C3%BCrcanaksoy/"
           >
             <LinkedInLogo theme={props.theme} /> &nbsp;&nbsp;
             {paragraphs[languagePreference.toLowerCase()].hero.link_3}
-          </button>
+          </a>
         </div>
       </div>
       <img
