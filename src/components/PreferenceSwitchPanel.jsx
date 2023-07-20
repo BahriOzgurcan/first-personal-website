@@ -9,22 +9,22 @@ const PreferenceSwitchPanel = (props) => {
 
   return (
     <div className="flex w-4/5 justify-end place-content-between">
-      <div className="language flex flex-row gap-8 ">
-        <button className=" border-2 border-text-indigo rounded-md"
+      <div className="language flex flex-row gap-4 mt-2 mb-2">
+        <button className=" w-12 text-xs border-2 text-white border-text-indigo rounded-md bg-text-indigo"
           onClick={() => {
             setLanguagePreference("en");
             document.documentElement.lang = "en";
           }}
         >
-          english
+          ENG
         </button>
-        <button className=" border-2 border-text-indigo rounded-md bg-text-gray"
+        <button className="w-12 text-xs border-2 text-white border-text-indigo rounded-md bg-text-indigo"
           onClick={() => {
             setLanguagePreference("tr");
             document.documentElement.lang = "tr";
           }}
         >
-          turkce
+          TR
         </button>
       </div>
       <div className="theme">
