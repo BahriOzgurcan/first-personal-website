@@ -50,7 +50,7 @@ export const paragraphs = {
           detail: "24.09.1993",
         },
         {
-          title: "Currently Living in",
+          title: "Living in",
           detail: "Istanbul",
         },
         {
@@ -74,7 +74,7 @@ export const paragraphs = {
           techs: ["react", "redux", "axios"],
           img_url: pizzaimg,
           button: "Canlı Versiyon",
-          links: [],
+          links: ["https://github.com/BahriOzgurcan/fsweb-s7-challenge-pizza", "https://www.twitter.com"],
         },
         {
             title: "Favourite Movie Selection Project",
@@ -82,7 +82,7 @@ export const paragraphs = {
             techs: ["react", "redux", "axios"],
             img_url: movie,
             button: "Canlı Versiyon",
-            links: [],
+            links: ["https://github.com/BahriOzgurcan/fsweb-s10g3-redux-watchlist", ""],
           },
         {
             title: "Movie Selection Project",
@@ -90,12 +90,12 @@ export const paragraphs = {
             techs: ["react", "redux", "axios"],
             img_url: movieSelection,
             button: "Canlı Versiyon",
-            links: [],
+            links: ["https://github.com/BahriOzgurcan/fsweb-s11g1-shopping-cart",""],
           },
       ],
     },
     footer: {
-        text: "Let's work together on your next product.",
+        text: "Let's work together on your next product...",
         email: "aksoyozgurcan@gmail.com",
         links:[
             {

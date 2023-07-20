@@ -11,7 +11,7 @@ const Projects = () => {
       <h2 className="mb-7 dark:text-[#AEBCCF]">
         {paragraphs[languagePreference].projects.header}
       </h2>
-      <div className="flex flex-row flex-wrap place-content-between gap-[7.5rem]">
+      <div className="flex flex-row flex-wrap place-content-between gap-[7.5rem] mx-2">
         {paragraphs[languagePreference].projects.projectDetails.map(
           (project) => {
             console.log();
@@ -29,7 +29,7 @@ const Projects = () => {
                   <p id="detail" className="mb-[1.125rem] text-[#6b7280]">
                     {project.detail}
                   </p>
-                  <div className="flex flex-wrap flex-row gap-4">
+                  <div className="flex flex-wrap flex-row gap-4 place-content-between ">
                     {project.techs.map((tech) => {
                       return (
                         <p className="flex tech px-[1.125rem] py-[0.375rem] basis-1/4 items-center place-content-center rounded-[0.25rem] border-[1px] text-text-indigo border-text-indigo dark:text-[#8F88FF] dark:border-[#8F88FF]">
@@ -37,6 +37,10 @@ const Projects = () => {
                         </p>
                       );
                     })}
+                  </div>
+                  <div className="flex w-full place-content-between px-2">
+                    <a className="text-xs underline font-semibold text-text-indigo dark:text-[#8F88FF]" href={project.links[0]}>Github</a>
+                    <a className="text-xs underline font-semibold text-text-indigo dark:text-[#8F88FF]" href={project.links[1]}>Live Version</a>
                   </div>
                 </div>
               </div>
