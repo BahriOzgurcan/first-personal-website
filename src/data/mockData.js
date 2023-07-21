@@ -5,8 +5,9 @@ import movie from "../assets/films.png";
 export const paragraphs = {
   en: {
     switchPanel: {
-      darkMode: "Dark Mode",
+      darkMode: "Dark Modes",
       lightMode: "Light Mode",
+      systemMode: "System Controlled",
       turkish: "Türkçe'ye Geç",
     },
     header: {
@@ -64,6 +65,11 @@ export const paragraphs = {
         detail:
           "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       },
+      {
+        title: "Bootstrap",
+        detail:
+          "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      },
     ]
     },
     profile: {
@@ -89,7 +95,7 @@ export const paragraphs = {
         },
       ],
       aboutDetail:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.Mnima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam!",
+      "Hi, I’m Bahri Özgürcan. I’m a full-stack developer. If you are looking for a Developer who to craft solid and scalable frontend products with great user experiences. Let’s shake hands with me.",
     },
     projects: {
       header: "Projects",
@@ -97,26 +103,26 @@ export const paragraphs = {
         {
           title: "Pizza Store",
           detail: "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
-          techs: ["react", "redux", "axios"],
+          techs: ["React", "Tailwind", "Axios", "Javascript", "Html", "CSS",],
           img_url: pizzaimg,
-          button: "Canlı Versiyon",
-          links: ["https://github.com/BahriOzgurcan/fsweb-s7-challenge-pizza", "https://www.twitter.com"],
+          button: "Live Version",
+          links: ["https://github.com/BahriOzgurcan/fsweb-s7-challenge-pizza", "https://fsweb-s7-challenge-pizza-rho.vercel.app/?vercelToolbarCode=L6oO-oJgnBCKGhO"],
         },
         {
             title: "Favourite Movie Selection Project",
             detail: "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
-            techs: ["react", "redux", "axios"],
+            techs: ["React", "Redux"],
             img_url: movie,
-            button: "Canlı Versiyon",
-            links: ["https://github.com/BahriOzgurcan/fsweb-s10g3-redux-watchlist", ""],
+            button: "Live Version",
+            links: ["https://github.com/BahriOzgurcan/fsweb-s10g3-redux-watchlist", "https://fsweb-s10g3-redux-watchlist-five.vercel.app/?vercelToolbarCode=N3W6i1JWTCObXlz"],
           },
         {
             title: "Movie Selection Project",
             detail: "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
-            techs: ["react", "redux", "axios"],
+            techs: ["React", "Context", "axios", "React Router"],
             img_url: movieSelection,
-            button: "Canlı Versiyon",
-            links: ["https://github.com/BahriOzgurcan/fsweb-s11g1-shopping-cart",""],
+            button: "Live Version",
+            links: ["https://github.com/BahriOzgurcan/fsweb-s11g1-shopping-cart", "https://fsweb-s11g1-shopping-cart-pi.vercel.app/?vercelToolbarCode=DPilU4pjKtxQeTG"],
           },
       ],
     },
@@ -139,10 +145,12 @@ export const paragraphs = {
         ]
     },
   },
+
   tr: {
     switchPanel: {
       darkMode: "Karınlık Mod",
       lightMode: "Aydınlık Mod",
+      systemMode: "Sistem Tercihi",
       turkish: "English Version",
     },
     header: {
@@ -163,18 +171,42 @@ export const paragraphs = {
       skills: [{
         title: "Javascript",
         detail:
-          "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "Doldurulacak",
       },
       {
         title: "React.Js",
         detail:
-          "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "Doldurulacak",
       },
       {
-        title: "Node.Js",
+        title: "CSS",
         detail:
-          "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      },]
+          "Doldurulacak",      },
+      {
+        title: "Html",
+        detail:
+          "Doldurulacak",      },
+      {
+        title: "Tailwind",
+        detail:
+          "Doldurulacak",      },
+      {
+        title: "Redux Store",
+        detail:
+          "Doldurulacak",      },
+      {
+        title: "Git/Github",
+        detail:
+          "Doldurulacak",      },
+      {
+        title: "Three.js",
+        detail:
+          "Doldurulacak",      },
+          {
+        title: "Bootstrap",
+        detail:
+          "Doldurulacak",      },
+    ]
     },
     profile: {
       header: "Profil",
@@ -199,34 +231,34 @@ export const paragraphs = {
         },
       ],
       aboutDetail:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.Mnima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam!",
+        "Merhaba, ben Bahri Özgürcan Aksoy. Full-stack yazılımcı olmak için çalışıyorum. Eğer öğrenmeye hevesli, yeni meydan okumalara açık, yaratıcı birisini arıyorsanız, benimle iletişime geçebilirsiniz.",
     },
     projects: {
       header: "Projeler",
       projectDetails: [
         {
-          title: "Workintech",
+          title: "Pizza Store",
           detail: "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
-          techs: ["react", "redux", "axios"],
-          img_url: "www.ww.com",
+          techs: ["React", "Tailwind", "Axios", "Javascript", "Html", "CSS",],
+          img_url: pizzaimg,
           button: "Canlı Versiyon",
-          links: [],
+          links: ["https://github.com/BahriOzgurcan/fsweb-s7-challenge-pizza", "https://fsweb-s7-challenge-pizza-rho.vercel.app/?vercelToolbarCode=L6oO-oJgnBCKGhO"],
         },
         {
-            title: "Random Jokes",
+            title: "Favourite Movie Selection Project",
             detail: "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
-            techs: ["react", "redux", "axios"],
-            img_url: "www.ww.com",
+            techs: ["React", "Redux"],
+            img_url: movie,
             button: "Canlı Versiyon",
-            links: [],
+            links: ["https://github.com/BahriOzgurcan/fsweb-s10g3-redux-watchlist", "https://fsweb-s10g3-redux-watchlist-five.vercel.app/?vercelToolbarCode=N3W6i1JWTCObXlz"],
           },
         {
-            title: "Journey",
+            title: "Movie Selection Project",
             detail: "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
-            techs: ["react", "redux", "axios"],
-            img_url: "www.ww.com",
+            techs: ["React", "Context", "axios", "React Router"],
+            img_url: movieSelection,
             button: "Canlı Versiyon",
-            links: [],
+            links: ["https://github.com/BahriOzgurcan/fsweb-s11g1-shopping-cart", "https://fsweb-s11g1-shopping-cart-pi.vercel.app/?vercelToolbarCode=DPilU4pjKtxQeTG"],
           },
       ],
     },
@@ -235,7 +267,7 @@ export const paragraphs = {
         email: "aksoyozgurcan@gmail.com",
         links:[
             {
-                text: "İnstagram",
+                text: "Instagram",
                 url: "https://www.instagram.com/bahriozgurcan/",
             },
             {

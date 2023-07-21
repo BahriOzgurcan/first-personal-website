@@ -6,19 +6,27 @@ import {
   SunIcon,
   ComputerDesktopIcon,
 } from "@heroicons/react/20/solid";
+import { paragraphs } from "../data/mockData";
+import { useContext } from "react";
+import { LanguageContext } from "../contexts/languageContext";
 
-const solutions = [
-  { name: "Dark Mode", description: "", icon: MoonIcon, source: "dark" },
-  { name: "Light Mode", description: "", icon: SunIcon, source: "light" },
-  {
-    name: "System Controlled",
-    description: "",
-    icon: ComputerDesktopIcon,
-    source: "delete",
-  },
-];
+
 
 export default function ThemeToggle() {
+
+    const { languagePreference } = useContext(LanguageContext);
+
+    const solutions = [
+        { name: paragraphs[languagePreference].switchPanel.darkMode , description: "", icon: MoonIcon, source: "dark" },
+        { name: paragraphs[languagePreference].switchPanel.lightMode, description: "", icon: SunIcon, source: "light" },
+        {
+          name: paragraphs[languagePreference].switchPanel.systemMode,
+          description: "",
+          icon: ComputerDesktopIcon,
+          source: "delete",
+        },
+      ];
+
   const handleThemeChange = () => {
     if (
       localStorage.getItem("theme") === JSON.stringify("dark") ||
@@ -60,7 +68,7 @@ export default function ThemeToggle() {
         leaveTo="opacity-0 translate-y-1"
       >
         <Popover.Panel className="absolute mt-8 flex justify-end ">
-          <div className="  flex-auto overflow-hidden rounded-[1.125rem] bg-indigo-700 text-white text-sm shadow-lg ring-1 ">
+          <div className="  flex-auto overflow-hidden rounded-[1.125rem] bg-text-indigo text-white text-sm shadow-lg ring-1 ">
             <div className="p-2">
               {solutions.map((item) => (
                 <div

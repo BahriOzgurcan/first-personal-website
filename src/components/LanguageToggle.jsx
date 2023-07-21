@@ -1,44 +1,28 @@
 import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import {
-  ChevronDownIcon,
-  MoonIcon,
-  SunIcon,
-  ComputerDesktopIcon,
+  ChevronDownIcon
 } from "@heroicons/react/20/solid";
+import { useContext } from "react";
+import { LanguageContext } from "../contexts/languageContext";
 
 const solutions = [
-  { name: "Dark Mode", description: "", icon: MoonIcon, source: "dark" },
-  { name: "Light Mode", description: "", icon: SunIcon, source: "light" },
-  {
-    name: "System Controlled",
-    description: "",
-    icon: ComputerDesktopIcon,
-    source: "delete",
-  },
+  { name: "EN", description: "", icon: "🇬🇧", source: "en" },
+  { name: "TR", description: "", icon: "🇹🇷", source: "tr" },
 ];
 
 export default function LanguageToggle() {
-  const handleThemeChange = () => {
-    if (
-      localStorage.getItem("theme") === JSON.stringify("dark") ||
-      (!("theme" in localStorage) &&
-        window.matchMedia("(prefers-color-scheme: dark)").matches)
-    ) {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-  };
+  const { languagePreference, setLanguagePreference } =
+    useContext(LanguageContext);
 
-  const handleOnClick = (theme) => {
-    if (theme === "delete") {
-      localStorage.removeItem("theme");
-      handleThemeChange();
+  const handleOnClick = (lang) => {
+    if (lang === "en") {
+      setLanguagePreference("en");
+      document.documentElement.lang = "en";
       return;
     } else {
-      localStorage.setItem("theme", JSON.stringify(theme));
-      handleThemeChange();
+      setLanguagePreference("tr");
+      document.documentElement.lang = "tr";
       return;
     }
   };
@@ -60,18 +44,15 @@ export default function LanguageToggle() {
         leaveTo="opacity-0 translate-y-1"
       >
         <Popover.Panel className="absolute mt-8 flex justify-end ">
-          <div className="  flex-auto overflow-hidden rounded-[1.125rem] bg-indigo-700 text-white text-sm shadow-lg ring-1 ">
+          <div className="  flex-auto overflow-hidden rounded-[1.125rem] bg-text-indigo text-white text-sm shadow-lg ring-1 ">
             <div className="p-2">
               {solutions.map((item) => (
                 <div
                   key={item.name}
                   className="group relative flex gap-x-2 my-1 px-1 rounded-lg hover:bg-[#B7AAFF]"
                 >
-                  <div className="mt-1 flex h-6 w-6 flex-none items-center justify-center rounded-[1.125rem] bg-[#B7AAFF] group-hover:bg-[#B7AAFF]">
-                    <item.icon
-                      className="h-4 w-4 text-gray-600 group-hover:text-indigo-700"
-                      aria-hidden="true"
-                    />
+                  <div className={`mt-1 flex h-6 w-6 flex-none text-lg items-center justify-center rounded-[1.125rem] ${languagePreference === "en" && item.source === "en" && "bg-[#B7AAFF]" || languagePreference === "tr" && item.source === "tr" && "bg-[#B7AAFF]" } group-hover:bg-[#B7AAFF]`}>
+                    {item.icon}
                   </div>
                   <div className=" items-center flex ">
                     <button
