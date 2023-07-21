@@ -1,11 +1,15 @@
 import { paragraphs } from "../data/mockData";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { LanguageContext } from "../contexts/languageContext";
 import { Carousel } from "@trendyol-js/react-carousel";
 import Arrow from "../assets/arrow";
 
 const Skills = (props) => {
   const { languagePreference } = useContext(LanguageContext);
+
+  useEffect(()=>{
+    
+  }, [languagePreference])
 
   return (
     <div id="skills" className="flex flex-col w-4/5 mt-20 pb-[2.62rem]">

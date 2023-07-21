@@ -11,7 +11,7 @@ const Footer = () => {
       <div className="flex flex-col w-4/5 pb-[2.62rem]">
         <h4 className="flex shrink mb-20 mt-24 dark:text-[#AEBCCF] text-text-default-gray">{paragraphs[languagePreference].footer.text}</h4>
         <div className=" flex flex-row flex-wrap place-content-between">
-          <a className=" text-[#AF0C48] dark:text-[#E1E1FF] text-[1.25rem]" href="">👉&nbsp;<span className="underline">{paragraphs[languagePreference].footer.email}</span></a>
+          <a id="email" className=" text-[#AF0C48] dark:text-[#E1E1FF] text-[1.25rem]" href="">👉&nbsp;<span className="underline">{paragraphs[languagePreference].footer.email}</span></a>
           <div className="flex gap-5">
             {paragraphs[languagePreference].footer.links.map((link)=> {
                 return (

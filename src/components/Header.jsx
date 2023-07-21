@@ -17,10 +17,10 @@ const Header = () => {
         <a className="flex-initial inline-flex h-13 text-base sm:text-lg font-medium leading-7 text-text-gray" href="#skills">
           {paragraphs[languagePreference.toLowerCase()].header.skills}
         </a>
-        <a className="flex-initial inline-flex h-13 text-base sm:text-lg font-medium leading-7 text-text-gray" href="#skills">
+        <a className="flex-initial inline-flex h-13 text-base sm:text-lg font-medium leading-7 text-text-gray" href="#projects">
         {paragraphs[languagePreference.toLowerCase()].header.projects}
         </a>
-        <a className="flex-initial whitespace-nowrap text-base  sm:text-lg font-medium not-italic bg-white text-text-indigo rounded-md border-[1px] px-8 py-3 border-indigo-900" href="#skills">
+        <a className="flex-initial whitespace-nowrap text-base  sm:text-lg font-medium not-italic bg-white text-text-indigo rounded-md border-[1px] px-8 py-3 border-indigo-900" href="#email">
         {paragraphs[languagePreference.toLowerCase()].header.hire}
         </a>
       </div>

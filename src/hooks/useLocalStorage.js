@@ -13,6 +13,7 @@ const useLocalStorage = (key, initialValue) => {
           document.documentElement.lang = "tr";
           return userSystemLanguage;
         } else {
+          document.documentElement.lang = "en";
           return "en";
         }
       }

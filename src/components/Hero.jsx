@@ -28,7 +28,7 @@ const Hero = (props) => {
         <div className="flex flex-row gap-3 flex-wrap">
           <a
             className="flex-initial whitespace-nowrap  text-lg font-medium not-italic bg-text-indigo text-white rounded-md border-[1px] px-8 py-3 border-indigo-900 dark:bg-[#E1E1FF] dark:text-[#3730A3]"
-            href="#skills"
+            href="#email"
           >
             {paragraphs[languagePreference.toLowerCase()].hero.link_1}
           </a>

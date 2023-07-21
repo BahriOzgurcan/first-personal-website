@@ -7,7 +7,7 @@ const Projects = () => {
   const { languagePreference } = useContext(LanguageContext);
 
   return (
-    <div className="flex flex-col w-4/5 pt-10 pb-[2.62rem] border-t-[1px] border-[#BAB2E7] h-fit">
+    <div id="projects" className="flex flex-col w-4/5 pt-10 pb-[2.62rem] border-t-[1px] border-[#BAB2E7] h-fit">
       <h2 className="mb-7 dark:text-[#AEBCCF]">
         {paragraphs[languagePreference].projects.header}
       </h2>
