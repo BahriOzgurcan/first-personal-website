@@ -12,8 +12,9 @@ import { LanguageContext } from "../contexts/languageContext";
 
 
 
-export default function ThemeToggle() {
+export default function ThemeToggle(props) {
 
+const {setTheme} = props;
     const { languagePreference } = useContext(LanguageContext);
 
     const solutions = [
@@ -34,8 +35,10 @@ export default function ThemeToggle() {
         window.matchMedia("(prefers-color-scheme: dark)").matches)
     ) {
       document.documentElement.classList.add("dark");
+      setTheme("dark");
     } else {
       document.documentElement.classList.remove("dark");
+      setTheme("light");
     }
   };
 

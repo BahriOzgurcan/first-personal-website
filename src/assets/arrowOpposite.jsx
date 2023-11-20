@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-const Arrow = (props) => {
+const ArrowOpp = (props) => {
 
 
  useEffect(
@@ -8,7 +8,7 @@ const Arrow = (props) => {
  )
 
   return (
-    <div className={`flex flex-col h-full place-content-center`}> 
+    <div className={`rotate-180 flex flex-col h-full place-content-center rotate`}> 
       <svg
         fill={props.theme !== "dark" ? "#3730A3" : "#E1E1FF"}
         height="25px"
@@ -32,4 +32,4 @@ const Arrow = (props) => {
   );
 };
 
-export default Arrow;
+export default ArrowOpp;

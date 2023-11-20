@@ -3,6 +3,8 @@ import { useContext, useEffect } from "react";
 import { LanguageContext } from "../contexts/languageContext";
 import { Carousel } from "@trendyol-js/react-carousel";
 import Arrow from "../assets/arrow";
+import ArrowOpp from "../assets/arrowOpposite";
+
 
 const Skills = (props) => {
   const { languagePreference } = useContext(LanguageContext);
@@ -16,8 +18,9 @@ const Skills = (props) => {
       <h2 className="mb-7 dark:text-[#AEBCCF]">
         {paragraphs[languagePreference].skills.header}
       </h2>
-      {/* <div className="flex flex-row w-full flex-wrap gap-[3rem] place-content-between"> */}
-        <Carousel className="gap-10" show={4.5} slide={2} transition={0.5} swiping={true} rightArrow={<Arrow theme={props.theme}/>} leftArrow={<Arrow rotation={180} theme={props.theme}/>}>
+   
+      <div className="flex flex-row w-full flex-wrap gap-[3rem] place-content-between">
+        <Carousel className="gap-10" show={4.5} slide={2} transition={0.5} swiping={true} rightArrow={<Arrow theme={props.theme}/>} leftArrow={<ArrowOpp theme={props.theme}/>}>
           {paragraphs[languagePreference].skills.skills.map((skill) => {
             return (
               <div
@@ -33,7 +36,7 @@ const Skills = (props) => {
             );
           })}
         </Carousel>
-      {/* </div> */}
+      </div>
     </div>
   );
 };

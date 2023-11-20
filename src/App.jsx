@@ -28,9 +28,12 @@ function App() {
       ) {
         document.documentElement.classList.add("dark");
         setTheme("dark");
+        console.log("dark theme")
       } else {
         document.documentElement.classList.remove("dark");
         setTheme("light");
+        console.log("light theme")
+
       }
     };
 
@@ -50,7 +53,7 @@ function App() {
     <div className="flex flex-col w-full items-center bg-white dark:bg-[#252128] dark:text-[#FFFFFF]">
       <div className="flex flex-row w-4/5 justify-end gap-4 mt-2">
         <LanguageToggle />
-        <ThemeToggle />
+        <ThemeToggle theme={theme} setTheme={setTheme}/>
       </div>
       {/* <RandomQuotes/> */}
       {/* <PreferenceSwitchPanel /> */}
