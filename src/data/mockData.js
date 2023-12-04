@@ -102,15 +102,15 @@ export const paragraphs = {
       projectDetails: [
         {
           title: "Pizza Store",
-          detail: "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
-          techs: ["React", "Tailwind", "Axios", "Javascript", "Html", "CSS",],
+          detail: "A simple pizza order interface where you can customize your pizza selection and create an order.",
+          techs: ["React", "Javascript", "Html", "CSS",],
           img_url: pizzaimg,
           button: "Live Version",
           links: ["https://github.com/BahriOzgurcan/fsweb-s7-challenge-pizza", "https://fsweb-s7-challenge-pizza-rho.vercel.app/?vercelToolbarCode=L6oO-oJgnBCKGhO"],
         },
         {
             title: "Favourite Movie Selection Project",
-            detail: "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
+            detail: "Redux is used to collect favourite movies of the user. Stored data is shown under \"My List\" section",
             techs: ["React", "Redux"],
             img_url: movie,
             button: "Live Version",
@@ -118,7 +118,7 @@ export const paragraphs = {
           },
         {
             title: "Movie Selection Project",
-            detail: "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
+            detail: "useContext is used to store data in this React App. User can update his/her shopping cart simultaneously.",
             techs: ["React", "Context", "axios", "React Router"],
             img_url: movieSelection,
             button: "Live Version",
@@ -238,7 +238,7 @@ export const paragraphs = {
       projectDetails: [
         {
           title: "Pizza Store",
-          detail: "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
+          detail: "A simple pizza order interface where you can customize your pizza selection and create an order.",
           techs: ["React", "Tailwind", "Axios", "Javascript", "Html", "CSS",],
           img_url: pizzaimg,
           button: "Canlı Versiyon",
@@ -246,7 +246,7 @@ export const paragraphs = {
         },
         {
             title: "Favourite Movie Selection Project",
-            detail: "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
+            detail: "Redux is used to collect favourite movies of the user. Stored data is shown under \"My List\" section",
             techs: ["React", "Redux"],
             img_url: movie,
             button: "Canlı Versiyon",
@@ -254,7 +254,7 @@ export const paragraphs = {
           },
         {
             title: "Movie Selection Project",
-            detail: "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
+            detail: "useContext is used to store data in this React App. User can update his/her shopping cart simultaneously.",
             techs: ["React", "Context", "axios", "React Router"],
             img_url: movieSelection,
             button: "Canlı Versiyon",
